@@ -82,6 +82,11 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
+.reasons-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
 .reasons-accomodation, .reasons-souvenirs, .small-square, .few-tourists {
     background-color: rgba(131, 179, 211, 0.12);
     text-align: center;
@@ -95,9 +100,38 @@ body {
     font-size: 18px;
     line-height: 21px;
 }
-
-/*
-.blue-block {
+.interested {
+    text-align: center;
+}
+.interested-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.subscribe{
+    background-image: url("../images/subscription-background.jpg");
+    background-size: 100% auto;
+    background-color: #5b89a7;
+    text-align: center;
+}
+.subscribe-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
     color: #FFFFFF;
-    background-color: #82B3D3;
+}
+.subscribe-text{
+    color: #FFFFFF;
+}
+.contacts{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.contacts a{
+    color: inherit;
+    text-decoration: none;
 }
