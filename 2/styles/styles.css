@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.navigation-link {
+    font-size: 20px;
+    color: inherit;
+    line-height: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+.greetings {
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto; /* фоновая картинка тянется по ширине на 100%, а по вертикали пропорционально */
+    text-align: center;
+}
+.sedona-definition {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.blue-block {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-align: center;
+}
+.reasons-town-and-bridge-header{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.reasons-town-and-bridge-number, .reasons-town-and-bridge-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.reasons-list {
+    text-align: center;
+}
+.reasons-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.reasons-accomodation, .reasons-souvenirs, .small-square, .few-tourists {
+    background-color: rgba(131, 179, 211, 0.12);
+    text-align: center;
+}
+.beautiful-road {
+    background-color: rgba(131, 179, 211, 0.2);
+    text-align: center;
+}
+.reasons-number {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/*
+.blue-block {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
