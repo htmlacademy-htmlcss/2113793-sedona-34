@@ -252,3 +252,6 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
+.input {
+  font-family: inherit;
+}
