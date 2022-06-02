@@ -30,9 +30,6 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
-  color: #000000;
-  background-color: #FFFFFF;
 }
 .navigation-link {
   font-size: 20px;
@@ -59,7 +56,7 @@ body {
   font-weight: 700;
   text-align: center;
 }
-.blue-block {
+.block {
   color: #FFFFFF;
   background-color: #82B3D3;
   text-align: center;
@@ -206,10 +203,11 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.accomodation-card-link {
-  font-weight: 700;
+.accomodation-card-title {
   font-size: 24px;
   line-height: 28px;
+}
+.accomodation-card-link {
   text-decoration: none;
   color: #000000;
   text-transform: none;
@@ -231,6 +229,9 @@ body {
 }
 .accomodation-card-button-favorites {
   background-color: #82B3D3;
+}
+.button-selected{
+  background-color: #7DB54F;
 }
 .accomodation-card-rating {
   font-weight: 400;
@@ -255,3 +256,8 @@ body {
 .input {
   font-family: inherit;
 }
+.button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
