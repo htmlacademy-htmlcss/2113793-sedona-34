@@ -1,0 +1,406 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+html {
+  height: 100%; /*steaky footer*/
+}
+body {
+  font-family: "PT Sans", "Verdana", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  width: 1200px;
+  color:#000000;
+  background-color:#FFFFFF;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.navigation {
+  display:flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.page-header-logo {
+  margin-left: 70px;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 390px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style:none;
+}
+.navigation-list:not(:last-child) { /* ПРОВЕРИТЬ */
+  margin-right: 34px;
+}
+.navigation-user {
+  width: 264px;
+  margin-left: auto;
+}
+.main-container {
+  flex-grow: 1;
+}
+.page-container {
+  width: 1200px;
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.navigation-link {
+  font-size: 20px;
+  color: inherit;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+.header-search { /* СДЕЛАТЬ ИКОНКИ НОРМАЛЬНО */
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+.header-favorites { /* СДЕЛАТЬ ИКОНКИ НОРМАЛЬНО*/
+  background-image: url("../images/favorites.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 50px;
+  height: 40px;
+}
+.nav-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  padding: 9px 15px 8px;
+  border-radius: 4px;
+}
+.greetings {
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto; /* фоновая картинка тянется по ширине на 100%, а по вертикали пропорционально */
+  text-align: center;
+}
+.welcome-logo {
+  margin-top: 51px;
+  margin-bottom: 83px;
+}
+.sedona-definition {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+.sedona-definition-statement {
+  height: 72px;
+  width: 620px;
+  font-size: inherit;
+  margin: 63px auto 31px;
+  text-transform: uppercase;
+}
+.five-reasons {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 90px;
+}
+.true-town-container {
+  display: flex;
+}
+.town-and-bridge-block {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-align: center;
+  width: 400px;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+}
+.reasons-town-and-bridge-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 92px auto 0;
+  width: 230px;
+  height: 56px;
+}
+.reasons-town-and-bridge-number,
+.reasons-town-and-bridge-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 30px;
+}
+.reasons-town-and-bridge-description {
+  width: 230px;
+  height: 60px;
+  margin: 30px auto;
+}
+.reasons-list {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.reasons-block {
+  width: 400px;
+  height: 384px;
+}
+.reasons-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.reasons-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.devil-bridge-container {
+  display: flex;
+}
+.square-road-tourists-container {
+  display: flex;
+}
+.reasons-accomodation,
+.reasons-souvenirs,
+.small-square,
+.few-tourists {
+  background-color: rgba(131, 179, 211, 0.12);
+  text-align: center;
+}
+.beautiful-road {
+  background-color: rgba(131, 179, 211, 0.2);
+  text-align: center;
+}
+.reasons-number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.interested {
+  text-align: center;
+}
+.interested-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 91px;
+}
+.interested-text{
+  margin-bottom: 56px;
+}
+.button-search {
+  color: #FFFFFF;
+  background-color: #756157; /* КАК СДЕЛАТЬ ПРАВИЛЬНЫЙ РАЗМЕР КНОПКИ? */
+  text-decoration: none;
+}
+.subscribe {
+  text-align: center;
+}
+.subscribe-index {
+  background-image: url("../images/subscription-background.jpg");
+  background-size: 100% auto;
+  background-color: #5b89a7;
+  margin-top: 93px;
+  height: 411px;
+}
+.subscribe-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+.subscribe-text {
+  color: #FFFFFF;
+}
+.subscribe-catalog
+.subscribe-title {
+  color: #000000;
+}
+.subscribe-catalog
+.subscribe-text {
+  color: #000000;
+}
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 57px;
+  margin-bottom: 47px;
+}
+.contacts {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 47px;
+  margin-bottom: 37px;
+}
+.contacts a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-logo {
+  margin-top: 49px;
+  margin-bottom: 38px;
+}
+.inner-header {
+  background-image: url("../images/catalog-background.jpeg");
+  background-size: 100% auto;
+  background-color: #5b89a7;
+  color: #FFFFFF;
+}
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
+}
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.control {
+  font-size: 18px;
+  line-height: 21px;
+}
+.cost-text {
+  font-size: 20px;
+}
+.button-submit,
+.button-reset  {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.button-submit {
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+}
+.result-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+}
+.accomodation-card {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.accomodation-card-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+.accomodation-card-link {
+  text-decoration: none;
+  color: #000000;
+  text-transform: none;
+}
+.accomodation-card-type,
+.accomodation-card-price,
+.quantity-text {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: none;
+}
+.accomodation-card-button-details,
+.accomodation-card-button-favorites {
+  font-weight: 700;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756157;
+  border-radius: 4px;
+}
+.accomodation-card-button-favorites {
+  background-color: #82B3D3;
+}
+.button-selected{
+  background-color: #7DB54F;
+}
+.accomodation-card-rating {
+  font-weight: 400;
+}
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  background-color: #82B3D3;
+  color:#FFFFFF;
+  text-align: center;
+}
+.pagination-current {
+  background-color: #F2F2F2;
+  color:#000000;
+}
+.quantity-select {
+  font-size: 18px;
+  line-height: 21px;
+}
+.input {
+  font-family: inherit;
+}
+.button {
+  font-family: inherit;
+  cursor: pointer;
+}
