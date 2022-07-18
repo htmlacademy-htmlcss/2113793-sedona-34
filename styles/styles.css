@@ -938,13 +938,13 @@ body {
   border-radius: 4px;
 }
 
-.welcome-title::before {
+.greetings::before {
   content: "";
   overflow: hidden;
   display: block;
 }
 
-.welcome-title {
+.greetings {
   background-image:url("../images/index-background.jpg");
   background-size: 1200px 485px;
   background-repeat: no-repeat;
@@ -1127,7 +1127,7 @@ input[type="email"]:invalid {
   outline: none;
 }
 
-.main-footer {
+.page-footer {
   display:flex;
   justify-content:space-between;
   width: 1200px;
@@ -1660,7 +1660,6 @@ input[type="email"]:invalid {
   background-position: center center;
   cursor: pointer;
   }
-
 
 .tooltip .bubble {
   display: none;
