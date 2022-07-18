@@ -179,5 +179,63 @@
         </div>
       </footer>
     </div>
+    <div class="modal-container modal-container-close>">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="modal-form-group">
+              <legend class="visually-hidden">Параметры поиска</legend>
+              <ul class="list modal-form-list">
+                <li class="modal-form-item">
+                  <label class="modal-form-check">
+                    <span class="modal-form-sign">Дата заезда:</span>
+                    <input class="form-input form-input-top" type="text" id="start" name="trip-start" value="27 апреля 2020">
+                    <span class="calendar"></span>
+                  </label>
+                  <span class="input-error">Мы не можем отправить вас в прошлое.</span>
+                </li>
+                <li class="modal-form-item">
+                  <label class="modal-form-check">
+                    <span class="modal-form-sign">Дата выезда:</span>
+                    <input class="form-input form-input-top" type="text" id="departure" name="trip-end" value="1 сентября 2021">
+                    <span class="calendar"></span>
+                  </label>
+                  <span class="input-approval">На эти даты есть свободные номера. Пока есть.</span>
+                </li>
+                <li class="modal-form-item">
+                  <ul class="list modal-form-guest">
+                    <li class="modal-form-item">
+                      <label class="modal-form-check">
+                        <span class="modal-form-sign">Взрослые:</span>
+                        <span class="plus"></span>
+                        <span class="minus"></span>
+                        <input class="form-input form-input-bottom" type="text" id="adults"  value="2">
+                      </label>
+                    </li>
+                    <li class="modal-form-item">
+                      <label class="modal-form-check modal-form-check-right">
+                        <span class="modal-form-sign">Дети:</span>
+                        <a class="information tooltip">
+                          <span class="bubble">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                          <span class=bubble-arrow></span>
+                        </a>
+                        <span class="plus"></span>
+                        <span class="minus"></span>
+                        <input class="form-input form-input-bottom" type="text" id="kids"  value="1">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <button class="modal-form-search" type="submit">Найти</button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
