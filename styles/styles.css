@@ -194,6 +194,10 @@ body {
   margin-top: 20px;
   margin-bottom: 19px;
 }
+.reasons {
+  margin:0;
+  padding: 0;
+}
 .header-search { /* СДЕЛАТЬ ИКОНКИ НОРМАЛЬНО */
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
@@ -222,109 +226,99 @@ body {
   text-align: center;
 }
 .sedona-definition-statement {
-  height: 72px;
-  width: 620px;
-  font-size: inherit;
-  margin: 63px auto 31px;
+  width: 720px;
+  margin: 145px auto auto auto;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
 }
 .five-reasons {
+  margin: 31px auto 80px auto;
+  text-align: center;
+  font-weight: normal;
   font-size: 22px;
-  line-height: 26px;
-  margin-bottom: 90px;
-}
-.true-town-container {
-  display: flex;
-}
-.town-and-bridge-block {
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  text-align: center;
-  width: 400px;
-  height: 384px;
-  display: flex;
-  flex-direction: column;
-}
-.reasons-town-and-bridge-header {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  margin: 92px auto 0;
-  width: 230px;
-  height: 56px;
-}
-.reasons-town-and-bridge-number,
-.reasons-town-and-bridge-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  margin-top: 30px;
-}
-.reasons-town-and-bridge-description {
-  width: 230px;
-  height: 60px;
-  margin: 30px auto;
-}
-.reasons-list {
-  text-align: center;
-  list-style: none;
-  display: flex;
-  margin: 0;
-}
-.reasons-block {
-  width: 400px;
-  height: 384px;
+  line-height: 36px;
 }
 .reasons-title {
+  width:200px;
+  max-width: 180px;
+  margin: 98px auto auto auto;
+  font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
   text-transform: uppercase;
+}
+.reasons-block .reasons-title{
+  margin: 184px auto auto;
 }
 .reasons-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  width: 250px;
+  margin: 20px auto;
 }
-.devil-bridge-container {
-  display: flex;
+.reasons-list, .reasons-list {
+  margin: 0px;
+  padding:0px;
+  list-style: none;
 }
-.square-road-tourists-container {
-  display: flex;
+.town-and-bridge-block {
+  margin: 0 auto auto auto;
 }
-.reasons-accomodation,
-.reasons-souvenirs,
-.small-square,
-.few-tourists {
-  background-color: rgba(131, 179, 211, 0.12);
-  text-align: center;
-}
-.beautiful-road {
-  background-color: rgba(131, 179, 211, 0.2);
-  text-align: center;
+.reasons-list {
+  display:flex;
+  height: 384px;
 }
 .reasons-number {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-}
-.interested {
-  text-align: center;
+  margin: 30px auto 30px;
 }
 .interested-title {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
-  margin-top: 91px;
+  margin: 91px auto 0px;
 }
-.interested-text{
-  margin-bottom: 56px;
+.interested-text {
+  width: 720px;
+  margin: 29px auto 0px;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 .button-search {
-  color: #FFFFFF;
-  background-color: #756157; /* КАК СДЕЛАТЬ ПРАВИЛЬНЫЙ РАЗМЕР КНОПКИ? */
+  width:575px;
+  height: 60px;
+  margin:55px auto 93px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #756257;
+  border-radius: 10px;
+  border: none;
+}
+.button-search:hover {
+  background-color: #615048;
+}
+.button-search:active a {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-search a {
+  display: block;
+  padding: 13px 10px 10px 10px;
+}
+.button-search a:focus{
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #83B3D3;
+  outline: none;
+}
+.interested a {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
   text-decoration: none;
 }
 .subscribe {
