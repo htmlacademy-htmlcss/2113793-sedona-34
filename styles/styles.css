@@ -44,6 +44,7 @@ body {
 .navigation {
   display:flex;
   width: 1200px;
+  height: 65px;
   margin: 0 auto;
 }
 .page-header-logo {
@@ -296,16 +297,27 @@ body {
   background-image: url("../images/catalog-background.jpeg");
   background-size: 100% auto;
   background-color: #5b89a7;
+  background-repeat: no-repeat;
   color: #FFFFFF;
+  margin: 0;
 }
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  width: 495px;
+}
+.wrapper {
+  padding: 35px 70px 70px 70px;
 }
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
+}
+.breadcrumbs-home {
+  background-image: url("../images/catalog-breadcrubs/breadcrubs-home.svg");
+  background-repeat: no-repeat;
 }
 .catalog-filter-title {
   font-size: 20px;
@@ -341,11 +353,20 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
+.flex-container {
+  display: flex;
+}
+.show-list {
+  background-image: url("/images/"); ??
+}
 .accomodation-card {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 .accomodation-card-title {
   font-size: 24px;
@@ -403,4 +424,7 @@ body {
 .button {
   font-family: inherit;
   cursor: pointer;
+}
+.accomodation-item {
+  width: 340;
 }
