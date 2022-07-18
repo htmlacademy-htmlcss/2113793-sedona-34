@@ -89,9 +89,36 @@ body {
 .navigation-list:not(:last-child) { /* ПРОВЕРИТЬ */
   margin-right: 34px;
 }
+.navigation-user .navigation-item:nth-last-child(2) {
+  right: 193px;
+}
+.navigation-user .navigation-item:first-child {
+  right: 233px;
+  top: 21px;
+}
 .navigation-user {
-  width: 264px;
-  margin-left: auto;
+  display:flex;
+  position: relative;
+  max-width: 310px;
+  margin: 0;
+  margin-left:auto;
+  margin-bottom: 10px;
+  align-items: center;
+  list-style-type: none;
+}
+.navigation-item .nav-button {
+  width: 160px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 0 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#FFFFFF;
+  background-color: #756257;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 .favorites {
   font-size: 10px;
@@ -110,6 +137,8 @@ body {
 }
 .main-container {
   flex-grow: 1;
+  width: 1200px;
+  margin: auto;
 }
 .page-container {
   width: 1200px;
@@ -149,14 +178,6 @@ body {
   background-position: 50% 50%;
   width: 50px;
   height: 40px;
-}
-.nav-button {
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  background-color: #756157;
-  padding: 9px 15px 8px;
-  border-radius: 4px;
 }
 .greetings {
   background-image: url("../images/index-background.jpg");
