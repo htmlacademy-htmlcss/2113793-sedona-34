@@ -86,8 +86,21 @@ body {
   color: #000000;
   text-decoration: none;
 }
-.navigation-list:not(:last-child) { /* ПРОВЕРИТЬ */
-  margin-right: 34px;
+.navigation-item a:hover {
+  color: #756257;
+}
+.navigation-item a:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+.navigation-icon:hover {
+  fill: #756257
+}
+.navigation-icon:active {
+  fill: rgba(117, 98, 87, 0.3);
+}
+.navigation-user .navigation-item:not(:last-child) {
+  position: absolute;
+  top: 20px;
 }
 .navigation-user .navigation-item:nth-last-child(2) {
   right: 193px;
@@ -134,6 +147,21 @@ body {
   left: 13px;
   width: 20px;
   height: 20px;
+}
+.navigation-item .nav-button:hover {
+  background-color: #615048;
+  color:#FFFFFF;
+}
+.navigation-item .nav-button:active {
+  background-color: #615048;
+  color:rgba(255, 255, 255, 0.3)
+}
+.current-navigation-item {
+  border-bottom: solid 2px #756257;
+}
+.nav-button:focus {
+  box-shadow: 0 0 0 4px #83B3D3;
+  outline: none;
 }
 .main-container {
   flex-grow: 1;
